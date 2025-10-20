@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RagioMex - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <section class="topbar_section">
+        <div class="container">
+            <div class="topbar_inner_main">
+                <div class="topbar_inner_txt">
+                    <p>Rufen Sie uns an für einen kostenlosen Kostenvoranschlag! Wir sind immer erreichbar: 
+                        <a href="tel: +123-456-7890">123-456-7890</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header class="header_section"> 
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+                            <li class="nav-item">
+                                <a aria-current="page" class="nav-link active" href="index.html">Heim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Über uns</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dienstleistung</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Galerie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                        <div class="navbtn_main">
+                            <a href="accounts/login.html"><button type="button">Login</button></a>
+                            <a href="accounts/signup.html"><button type="button" class="nav_btn2">Register</button></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero_section">
+        <div class="container">
+            <div class="hero_text_txt_main">
+                <h5>Professionelle Unterhaltsreinigung</h5>
+                <h1>Ihr sauberes Zuhause – flexibel, zuverlässig, jeden Tag.</h1>
+                <p>Mit RegioMex erleben Sie eine neue Art der Unterhaltsreinigung: jederzeit kündbar, sofort buchbar und mit massgeschneiderter Offerte.</p>
+                <p>Dazu bieten wir Ihnen auch Umzugsreinigung und Umzug 
+                    als perfekte Ergänzung – alles aus einer Hand.</p>
+                <!-- <div class="hero_btns_main">
+                    <button type="button">Book A Schedule <i class="bi bi-arrow-right-short"></i></button>
+                    <button type="button">Request a Qoute <i class="bi bi-arrow-right-short"></i></button>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    
+    <section class="home_section_one">
+        <div class="container">
+            <div class="home_sec1_txt1">
+                <h1>Offertenanfrage</h1>
+                <p>Bitte Dienstleistung wählen. Inhalte werden automatisch ein-/ausgeblendet.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div class="home_sec1_left_card_main">
+                        <button type="button" class="home_sec1_btn1">Anfrange</button>
+                        <div class="home_sec1_left_card_input">
+                            <label for="">Dienstleistung</label>
+                            <select class="form-select">
+                                <option value="">Unterhaltsreinigung</option>
+                                <option value="">Unterhaltsreinigung</option>
+                                <option value="">Unterhaltsreinigung</option>
+                                <option value="">Unterhaltsreinigung</option>
+                            </select>
+                        </div>
+                        <div class="home_sec1_left_card_input">
+                            <label for="">Reinigungsumfang</label>
+                        </div>
+                        <div class="home_sec1_left_card_terms">
+                            <input type="checkbox" id="Allgemein">
+                            <label for="Allgemein">Allgemein Staub entfernen</label>
+                        </div>
+                        <div class="home_sec1_left_card_terms">
+                            <input type="checkbox" id="Allgemein">
+                            <label for="Allgemein">Allgemein Staub entfernen</label>
+                        </div>
+                        <div class="home_sec1_left_card_terms">
+                            <input type="checkbox" id="Allgemein">
+                            <label for="Allgemein">Allgemein Staub entfernen</label>
+                        </div>
+                        <div class="home_sec1_left_card_terms">
+                            <input type="checkbox" id="Allgemein">
+                            <label for="Allgemein">Allgemein Staub entfernen</label>
+                        </div>
+                        <div class="home_sec1_left_card_terms">
+                            <label for="">Weitere Dienstleistungen / Kommentare</label>
+                        </div>
+                        <div class="home_sec1_left_card_input">
+                            <textarea rows="3" placeholder="Zusätzliche Wünsche …"></textarea>
+                        </div>
+                        <div class="home_sec1_left_card_input">
+                            <label for="">Reinigungsfrequenz</label>
+                            <select class="form-select">  
+                                <option value="">Bitte wählen</option>
+                                <option value="">Bitte wählen</option>
+                                <option value="">Bitte wählen</option>
+                                <option value="">Bitte wählen</option>
+                                <option value="">Bitte wählen</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="home_sec1_left_card_input">
+                                    <label for="">Dauer pro Einsatz</label>
+                                    <input type="text" placeholder="z. B. 2 .5">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="home_sec1_left_card_input">
+                                    <label for="">Uhrzeit</label>
+                                    <input type="text" placeholder="HH:MM">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="home_sec1_left_card_input">
+                                    <label for="">Wochentag</label>
+                                    <select class="form-select">
+                                        <option value="">Montag</option>
+                                        <option value="">Montag</option>
+                                        <option value="">Montag</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="home_sec1_left_card_input">
+                                    <label for="">Gewähltes Datum</label>
+                                    <input type="text" placeholder="TT:MM:YYYY">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="home_sec1_left_card_input">
+                                    <label for="">Nachname</label>
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="home_sec1_left_card_input">
+                                    <label for="">Vorname</label>
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="home_sec1_left_card_input">
+                                    <label for="">Telefon</label>
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="home_sec1_left_card_input">
+                                    <label for="">E-Mail</label>
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="home_sec1_left_card_input">
+                                    <label for="">Strasse</label>
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="home_sec1_left_card_input">
+                                    <label for="">Ort</label>
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="home_sec1_calender">
+                        <h1>CALENDAR</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="home_sec1_last_btn">
+                <button type="button">Anfrage senden</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="home_section_two">
+        <div class="container">
+            <div class="home_sec_title">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 col-sm-12">
+                        <div class="home_title_txt1">
+                            <h5>beste Dienstleistungen</h5>
+                            <h1>Unsere Reinigungsdienstleistungen</h1>
+                            <p>Zuverlässige, umweltfreundliche Reinigung, die auf Ihren Lebensstil, Ihren Zeitplan und Ihre spezifischen Platzanforderungen zugeschnitten ist.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <div class="home_title_txt2">
+                            <h5>Sie sind sich nicht sicher, welcher Service der richtige für Sie ist?</h5>
+                            <button type="button">Alle Dienste anzeigen <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="home_sec2_card_body">
+                        <img src="assets/img/sec2_1.svg" alt="">
+                        <h4>Unterhaltsreinigung</h4>
+                        <p>Eine regelmäßige Reinigung, die Ihr Zuhause dauerhaft frisch hält — ideal für wöchentliche oder monatliche Pflege mit gleichbleibendem Qualitätsstandard.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="home_sec2_card_body">
+                        <img src="assets/img/sec2_2.svg" alt="">
+                        <h4>Umzugsreinigung</h4>
+                        <p>Eine gründliche Endreinigung für den Auszug — perfekt, um Ihre Wohnung makellos zu übergeben und Stress beim Vermieter zu vermeiden.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="home_sec2_card_body">
+                        <img src="assets/img/sec2_3.svg" alt="">
+                        <h4>Umzug</h4>
+                        <p>Rundum-Hilfe beim Umzug — von Transport über Reinigung bis hin zu kleineren Aufgaben, die den Ortswechsel sorgenfrei machen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home_section_three">
+        <div class="container">
+            <div class="home_sec3_main">
+                <div class="home_sec3_txt">
+                    <h1>Flexible Reinigung für Ihr Zuhause – zuverlässig, jeden Tag.</h1>
+                    <p>Fordern Sie jetzt Ihre massgeschneiderte Offerte an – sofort buchbar, jederzeit kündbar.</p>
+                </div>
+                <button type="button">Angebot anfordern <i class="bi bi-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="home_section_four">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="home_title_txt1">
+                        <h5>Holen Sie sich unseren Service</h5>
+                        <h1>Buchen Sie in Minuten. <br> Sauber für Tage</h1>
+                    </div>
+                    <div class="home_sec4_inner_main">
+                        <div class="home_sec4_inner_card_body">
+                            <div class="home_sec4_inner_card_img">
+                                <img src="assets/img/sec4_1.svg" alt="">
+                            </div>
+                            <div class="home_sec4_inner_card_txt">
+                                <h3>Wählen Sie Ihre Zeit</h3>
+                                <p>Wählen Sie ein Datum und eine Uhrzeit, die am besten in Ihren Zeitplan passen – wir sind da.</p>
+                            </div>
+                        </div>
+                        <div class="home_sec4_inner_card_body">
+                            <div class="home_sec4_inner_card_img">
+                                <img src="assets/img/sec4_2.svg" alt="">
+                            </div>
+                            <div class="home_sec4_inner_card_txt">
+                                <h3>Buchen Sie schnell</h3>
+                                <p>Verwenden Sie unser einfaches Online-Formular, um Ihren Service auszuwählen und in nur wenigen Minuten zu bestätigen.</p>
+                            </div>
+                        </div>
+                        <div class="home_sec4_inner_card_body">
+                            <div class="home_sec4_inner_card_img">
+                                <img src="assets/img/sec4_3.svg" alt="">
+                            </div>
+                            <div class="home_sec4_inner_card_txt">
+                                <h3>Unser Team kommt</h3>
+                                <p>Unsere vertrauenswürdigen Fachleute erscheinen pünktlich, voll ausgestattet und bereit zum Reinigen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="home_sec4_right_main">
+                        <div class="home_sec4_right_img">
+                            <img src="assets/img/sec4_4.svg" alt="">
+                        </div>
+                        <div class="home_sec4_right_botton_cont">
+                            <img src="assets/img/sec4_5.svg" alt="">
+                            <p>Wir bei Regiomex sind stolz darauf, zuverlässige und qualitativ hochwertige Reinigungsdienste anzubieten, die von freundlichen Fachleuten, transparenten Preisen und einer 100-prozentigen Zufriedenheitsgarantie unterstützt werden.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home_section_five">
+        <div class="container">
+            <div class="home_sec5_txt_div">
+                <h1>Wir machen Reinigungsdienste einfach, zuverlässig und stressfrei</h1>
+                <p>Professionelle Desinfektions- und Reinigungsdienste,
+                     auf die Sie sich verlassen können – jederzeit</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="home_sec5_swiper_main">
+        <div class="container">
+            <div class="home_sec5_swiper_inner">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="home_sec5_swiper_card">
+                                <h1>1820+</h1>
+                                <p>Saubere Häuser</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="home_sec5_swiper_card">
+                                <h1>10</h1>
+                                <p>Glorreiche Jahre</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="home_sec5_swiper_card">
+                                <h1>750+</h1>
+                                <p>Aktive Kunden</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="home_sec5_swiper_card">
+                                <h1>55+</h1>
+                                <p>Zertifizierte Reinigungsexperten</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home_section_six">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="home_sec6_left_img">
+                        <img src="assets/img/h6_1.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="home_sec6_right_main">
+                        <div class="home_title_txt1">
+                            <h5>Entfernungsreinigung</h5>
+                            <h1>Auszug? Wir kümmern uns um die Reinigung!</h1>
+                            <p>Unser Reinigungsservice eignet sich ideal für die Endreinigung, vor dem Verkauf oder nach dem Umzug. Wir hinterlassen die Räumlichkeiten blitzblank, damit Sie beruhigt weiterziehen können.</p>
+                        </div>
+                        <div class="home_sec6_right_txt">
+                            <p><img src="assets/img/aus1.svg" alt=""> Gründliche Reinigung aller Räume</p>
+                            <p><img src="assets/img/aus2.svg" alt=""> Gründliches Schrubben von Küche und Bad</p>
+                            <p><img src="assets/img/aus3.svg" alt=""> Fensterreinigung im Innenbereich</p>
+                            <p><img src="assets/img/aus4.svg" alt=""> Boden- und Flächendesinfektion</p>
+                            <p><img src="assets/img/aus5.svg" alt="">  Entsorgung von Kleinmüll</p>  
+                            <button type="button">Fordern Sie ein kostenloses Angebot an</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="about_section_four">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-9 col-sm-12">
+                    <div class="about_sec4_title_txt1">
+                        <h5>Zufriedene Kunden</h5>
+                        <h1>Was unsere Kunden sagen</h1>
+                        <p>Das sagen Kunden, nachdem sie unseren großartigen Service für ihre Kunden in Anspruch genommen haben.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="about_sec4_swiper_inner mt-5">
+            <div class="swiper mySwiper_test">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="about_sec4_swiper_card">
+                            <p>„Ich liebe es, dass ich mehr Zeit mit meinem Mann, meinen Kindern und meiner Familie verbringen kann und weniger Zeit damit verbringe, mir den Stress zu machen, mein Haus sauber zu halten.“</p>
+                            <div class="about_sec4_swiper_profile_main">
+                                <div class="about_sec4_swiper_profile_inner">
+                                    <img src="assets/img/profile.svg" alt="">
+                                    <div>
+                                        <h5>Chintya Xin</h5>
+                                        <p>Hausfrau</p>
+                                    </div>
+                                </div>
+                                <div class="about_sec4_swiper_stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about_sec4_swiper_card">
+                            <p>„Ich liebe es, dass ich mehr Zeit mit meinem Mann, meinen Kindern und meiner Familie verbringen kann und weniger Zeit damit verbringe, mir den Stress zu machen, mein Haus sauber zu halten.“</p>
+                            <div class="about_sec4_swiper_profile_main">
+                                <div class="about_sec4_swiper_profile_inner">
+                                    <img src="assets/img/profile.svg" alt="">
+                                    <div>
+                                        <h5>Chintya Xin</h5>
+                                        <p>Hausfrau</p>
+                                    </div>
+                                </div>
+                                <div class="about_sec4_swiper_stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about_sec4_swiper_card">
+                            <p>„Ich liebe es, dass ich mehr Zeit mit meinem Mann, meinen Kindern und meiner Familie verbringen kann und weniger Zeit damit verbringe, mir den Stress zu machen, mein Haus sauber zu halten.“</p>
+                            <div class="about_sec4_swiper_profile_main">
+                                <div class="about_sec4_swiper_profile_inner">
+                                    <img src="assets/img/profile.svg" alt="">
+                                    <div>
+                                        <h5>Chintya Xin</h5>
+                                        <p>Hausfrau</p>
+                                    </div>
+                                </div>
+                                <div class="about_sec4_swiper_stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about_sec4_swiper_card">
+                            <p>„Ich liebe es, dass ich mehr Zeit mit meinem Mann, meinen Kindern und meiner Familie verbringen kann und weniger Zeit damit verbringe, mir den Stress zu machen, mein Haus sauber zu halten.“</p>
+                            <div class="about_sec4_swiper_profile_main">
+                                <div class="about_sec4_swiper_profile_inner">
+                                    <img src="assets/img/profile.svg" alt="">
+                                    <div>
+                                        <h5>Chintya Xin</h5>
+                                        <p>Hausfrau</p>
+                                    </div>
+                                </div>
+                                <div class="about_sec4_swiper_stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about_swiper_arrows" id="about_swiper_arrows2">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="home_section_seven">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="home_title_txt1">
+                        <h5>Kontakt</h5>
+                        <h1>Nehmen Sie Kontakt auf</h1>
+                        <p>Füllen Sie das Formular aus und unser Team wird sich innerhalb von 24 Stunden bei Ihnen melden.</p>
+                    </div>
+                    <div class="home_sec7_inner_main">
+                        <div class="home_sec7_inner_card_body">
+                            <div class="home_sec7_inner_card_img">
+                                <img src="assets/img/con1.svg" alt="">
+                            </div>
+                            <div class="home_sec7_inner_card_txt">
+                                <h3>Telefon</h3>
+                                <p>+41 79 123 45 67</p>
+                            </div>
+                        </div>
+                        <div class="home_sec7_inner_card_body">
+                            <div class="home_sec7_inner_card_img">
+                                <img src="assets/img/con2.svg" alt="">
+                            </div>
+                            <div class="home_sec7_inner_card_txt">
+                                <h3>Post</h3>
+                                <p>info@regiomex.ch</p>
+                            </div>
+                        </div>
+                        <div class="home_sec7_inner_card_body">
+                            <div class="home_sec7_inner_card_img">
+                                <img src="assets/img/con3.svg" alt="">
+                            </div>
+                            <div class="home_sec7_inner_card_txt">
+                                <h3>Standort</h3>
+                                <p>Musterstrasse 12 8000 Zürich Switzerland</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                   <div class="contact_card_body">
+                        <div class="contact_card_input">
+                            <label for="">Name*</label>
+                            <input type="text" placeholder="Ihr Name">
+                        </div>
+                        <div class="contact_card_input">
+                            <label for="">Email*</label>
+                            <input type="text" placeholder="Ihre E-Mail">
+                        </div>
+                        <div class="contact_card_input">
+                            <label for="">Nachricht</label>
+                            <textarea rows="5" placeholder="Ihre Nachricht"></textarea>
+                        </div>
+                        <button type="button">Buchen Sie einen Zeitplan</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="spotless_section">
+        <div class="container">
+            <div class="spotless_sec_main">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                        <div class="spotless_sec_txt">
+                            <h1>Bereit für Makellosen zuhause eidbüro?</h1>
+                            <p>Überlassen Sie die Reinigung unseren erfahrenen Fachleuten und genießen Sie eine makellose, gesunde Umgebung, ohne einen Finger zu heben - alles mit transparenten Preisgestaltung und flexibler Planung, die zu Ihrem Leben passt. </p>
+                            <button type="button">Buchen Sie jetzt Ihre Reinigung</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="spotless_img">
+                    <img src="../assets/img/cartoon.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="footer_section">
+        <div class="container">
+            <div class="footer_second_main">
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="footer_sec_txt1">
+                            <img src="assets/img/logo.svg" alt="">
+                            <p>We are a fashion-forward brand dedicated to bringing you timeless designs and modern trends. From everyday essentials to statement pieces.</p>
+                        </div>
+                        <div class="footer_social_icons_main">
+                            <a href="#"><img src="assets/img/sm1.svg" alt=""></a>
+                            <a href="#"><img src="assets/img/sm2.svg" alt=""></a>
+                            <a href="#"><img src="assets/img/sm3.svg" alt=""></a>
+                            <a href="#"><img src="assets/img/sm4.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="footer_links_inner">
+                                    <h5>Navigation</h5>
+                                    <a href="#">Heim</a>
+                                    <a href="#">Über uns</a>
+                                    <a href="#">Services</a>
+                                    <a href="#">Kontakt</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                 <div class="footer_links_inner">
+                                    <h5>Quick Links</h5>
+                                    <a href="#">Privacy Policy</a>
+                                    <a href="#">Terms Of Service</a>
+                                    <a href="#">Disclaimer</a>
+                                    <a href="#">Faq</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                 <div class="footer_links_inner">
+                                    <h5>Kontakt</h5>
+                                    <a href="#"><img src="assets/img/f1.svg" alt=""> 123-456-7890</a>
+                                    <a href="#"><img src="assets/img/f2.svg" alt=""> info@Regiomex.ch</a>
+                                    <a href="#"><img src="assets/img/f3.svg" alt=""> Musterstrasse 12 8000 Zürich Switzerland</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer_last_main">
+        <p>© Copyright RegioMex 2025 | All Rights Reserved</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                520: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
+
+    
+    <script>
+        var swiper = new Swiper(".mySwiper_test", {
+            slidesPerView: 1.8,
+            spaceBetween: 30,
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                200: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 10,
+                },
+                520: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 10,
+                },
+                640: {
+                    slidesPerView: 2.8,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 2.8,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 2.8,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
+    
+</body>
+</html>

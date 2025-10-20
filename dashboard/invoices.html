@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regiomex - Rechnungen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+<body>
+
+    <section class="dashboard_section">
+        <div class="sidebar_main">
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar_inner">
+                    <div class="sidebar_title">
+                        <h2>LOGO</h2>
+                        <div class="toggle-btn" id="toggleBtn"><img src="../assets/img/toggle.svg" alt=""></div>
+                    </div>
+                    <div class="sidebar_links_main">
+                        <a href="dashboard.html" class="sidebar_links">
+                        <div>
+                            <img src="../assets/img/sb1.svg" alt="">
+                            <label for="">Armaturenbrett</label>
+                        </div>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="subscription.html" class="sidebar_links">
+                        <div>
+                            <img src="../assets/img/sb2.svg" alt="">
+                            <label for="">Buchungen</label>
+                        </div>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="invoices.html" class="sidebar_links active">
+                        <div>
+                            <img src="../assets/img/sb3.svg" alt="">
+                            <label for="">Rechnungen</label>
+                        </div>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="support.html" class="sidebar_links">
+                        <div>
+                            <img src="../assets/img/sb4.svg" alt="">
+                            <label for="">Nachrichten</label>
+                        </div>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="profile.html" class="sidebar_links">
+                        <div>
+                            <img src="../assets/img/sb5.svg" alt="">
+                            <label for="">Profil</label>
+                        </div>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar_bottom">
+                <a href="account_setting.html" class="sidebar_link2">
+                    <div class="sidebar_links_inner">
+                            <img src="../assets/img/profile.svg" alt="">
+                            <div class="sidebar_links_inner_txt">
+                                <p>John Doe</p>
+                                <label for="">Benutzer</label>
+                            </div>
+                    </div>
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+                <button type="button" class="logout_btn">
+                    <img src="../assets/img/logout.svg" alt=""> 
+                    <span>Logout</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="dash_main">
+            <div class="dashboard_header">
+                <div class="dash_header_title">
+                    <h3>Willkommen, John Doe 👋</h3>
+                    <p>Ein kurzer Überblick über Ihre bevorstehenden Buchungen, Nachrichten, Rechnungen und Kontoaktivitäten - alles an einem Ort .</p>
+                </div>
+                <div class="dash_header_right_main">
+                    <div class="dash_header_input">
+                        <input type="text" placeholder="Suche nach . . ."/>
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="dash_header_icons">
+                        <img src="../assets/img/notfi.svg" alt="">
+                    </div>
+                    <div class="dash_header_icons">
+                        <img src="../assets/img/what.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard_content_main">
+                <div class="dasboard_title1">
+                    <div class="dasboard_title1_inner">
+                        <img src="../assets/img/dash1.svg" alt="">
+                        <p>Rechnung # 2020-05-0001</p>
+                    </div>
+                </div>
+                <div class="dasboard_title2">
+                    <p>Bezahlt am 27. Juni 2023</p>
+                    <a href="invoicestable.html"><button type="button">Alle Rechnungen anzeigen</button></a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                        <div class="invoices_left_content_main">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="invoices_left_card1_body">
+                                        <h5>Absender</h5>
+                                        <h5>Regiomex Reinigung </h5>
+                                        <p>Marienststraße 16, 80331 München, Deutschland</p>
+                                        <p>+49 89 123 4567</p>
+                                        <a href="#">Abrechnung@regiomex . de</a>
+                                        <h6>Mehrwertsteuer -ID: DE292041001</h6>
+                                        <h6>Iban: DE89 3704 0044 0532 0130 00</h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="invoices_left_card1_body">
+                                        <h5>Kunde</h5>
+                                        <h5>Bill an: Sarah Müller </h5>
+                                        <p>1445 West Norwood Avenue, Illinois, USA</p>
+                                        <p>+49 160 1234567</p>
+                                        <a href="#">Sarah . mueller@Email . com</a>
+                                        <h6>Mehrwertsteuer ID: DE183849291</h6>
+                                        <h6>Iban: DE89 3704 0044 0532 0130 00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="invoices_left_cards2_main">
+                                <div class="invoices_left_cards2_inner1_main">
+                                    <div class="invoices_left_cards2_inner1_txt1_main">
+                                        <div class="invoices_left_cards2_inner1_txt">
+                                            <p>Rechnungsdatum</p>
+                                            <h5>03/05/2020</h5>
+                                        </div>
+                                        <div class="invoices_left_cards2_inner1_txt">
+                                            <p>Liefertermin</p>
+                                            <h5>03/05/2020</h5>
+                                        </div>
+                                        <div class="invoices_left_cards2_inner1_txt">
+                                            <p>Zahlungsbedingungen</p>
+                                            <h5>Innerhalb von 15 Tagen</h5>
+                                        </div>
+                                        <div class="invoices_left_cards2_inner1_txt">
+                                            <p>Zahlungsfrist</p>
+                                            <h5>18.05.2020</h5>
+                                        </div>
+                                    </div>
+                                    <div class="invoices_left_cards2_inner2_main">
+                                        <div class="invoices_left_cards2_inner2_txt">
+                                           <p>Abrechnungsadresse</p>
+                                            <h5>Willy Wonka</h5>
+                                        </div>
+                                        <div class="invoices_left_cards2_inner2_txt">
+                                            <p>1445 West Norwood Avenue, Itasca, Illinois, USA</p>
+                                            <p>97223041054 | . om@om . com</p>
+                                        </div>
+                                        <div class="invoices_left_cards2_inner2_txt">
+                                            <h6>Siret: 362 521 879 00034</h6>
+                                            <h6>Mehrwertsteuer: 842-484021</h6>
+                                        </div>
+                                        <div class="invoices_left_cards2_inner2_txt">
+                                            <span>Notiz</span>
+                                            <h4>Dies ist eine benutzerdefinierte Nachricht, die für den Kunden relevant sein könnte. Es kann bis zu drei oder vier Zeilen umfassen. Es kann bis zu drei oder vier Zeilen . umfassen</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="invoices_left_cards2_table">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col"><p class="ithp">nein .</p></th>
+                                            <th scope="col"><p class="ithp">Servicebeschreibung</p></th>
+                                            <th scope="col"><p class="ithp">Reiniger</p></th>
+                                            <th scope="col"><p class="ithp">Stückpreis</p></th>
+                                            <th scope="col"><p class="ithp">Mehrwertsteuer</p></th>
+                                            <th scope="col"><p class="ithp">Menge</p></th>
+                                            <th scope="col"><p class="ithp">Endbetrag</p></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Wartungsreinigung</td>
+                                                <td>1</td>
+                                                <td>20 €</td>
+                                                <td>0%</td>
+                                                <td>3.000 €</td>
+                                                <td>3.000 €</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Produktname</td>
+                                                <td>1</td>
+                                                <td>20 €</td>
+                                                <td>0%</td>
+                                                <td>3.000 €</td>
+                                                <td>3.000 €</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Produktname</td>
+                                                <td>1</td>
+                                                <td>20 €</td>
+                                                <td>0%</td>
+                                                <td>3.000 €</td>
+                                                <td>3.000 €</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="invoce_last_txt">Bitte zahlen Sie innerhalb von 15 Tagen nach Erhalt dieser Rechnung <span>Für Unterstützung wenden Sie sich an Support@Regiomex . de</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="invoices_right_content_main">
+                            <div class="invoices_right_card1_body">
+                                <h3>Rechnung noch nicht gesendet!</h3>
+                                <button type="button"><i class="bi bi-send"></i> Senden Sie Rechnung</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="../assets/js/dashboard.js"></script>
+
+
+</body>
+</html>
