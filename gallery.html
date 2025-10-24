@@ -27,7 +27,7 @@
 
     <header class="header_section"> 
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -235,6 +235,51 @@
             duration: 1200,
         });
     </script>
+
+        <script>
+        var swiper = new Swiper(".PD_Swiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 8,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+                200: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                520: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 6,
+                    spaceBetween: 30,
+                },
+            },
+        });
+        var swiper2 = new Swiper(".PD_Swiper2", {
+            loop: true,
+            spaceBetween: 10,thumbs: {
+            swiper: swiper,
+        },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            }
+        });
+  </script>
     
 </body>
 </html>
