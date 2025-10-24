@@ -26,6 +26,7 @@ body {
     margin-top: 20px;
     border-radius: 8px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 .dashboard_content_main::-webkit-scrollbar{
     width: 0;
@@ -303,11 +304,22 @@ body {
     color: #232323;
     margin-bottom: 0;
 }
+.dasboard_title1 button{
+    border: 1px solid #3762E9;
+    color: #3762E9;
+    background-color: transparent;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
 .dasboard_title2{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    margin-top: 15px;
 }
 .dasboard_title2 p{
     font-weight: 400;
@@ -318,7 +330,7 @@ body {
 }
 .dasboard_title2 button{
     background: #3762E9;
-    border: none;
+    border: 1px solid #3762E9;
     padding: 8px 14px;
     border-radius: 4px;
     font-weight: 500;
@@ -327,6 +339,249 @@ body {
     letter-spacing: 0%;
     color: #FFFFFF;
 }
+.dasboard_title2 button#dt2_btn2{
+    border: 1px solid #3762E9;
+    color: #3762E9;
+    background-color: transparent;
+}
+.dasboard_title2_btns{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.dasboard_title2 input{
+    background: #F7FCFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    padding: 8px;
+}
+.dashboard1_inner_content_main{
+    height: auto;
+}
+.dashboard1_top3_card_body{
+    background: #F7FCFF;
+    border: 1px solid #EBEBEB;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.dashboard1_top3_card_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.dashboard1_top3_card_title h3{
+    font-weight: 600;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 0;
+}
+.dashboard1_top3_card_title .dropstart .dropdown-toggle::before{
+    border: none;
+}
+.dashboard1_top3_card_title .dropdown-toggle{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+.dashboard1_top3_card_body p{
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #232323;
+    margin-top: 10px;
+}
+.dashboard1_billing_card{
+    background: #F7FCFF;
+    border: 1px solid #EBEBEB;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.dash1_billing_btns{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.dash1_billing_btns a{
+    width: 100%;
+}
+.dash1_billing_btns button{
+    background: #3762E9;
+    border: 1px solid #3762E9;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    width: 100%;
+}
+.dash1_billing_btns button#dt3_btn2{
+    border: 1px solid #3762E9;
+    color: #3762E9;
+    background-color: transparent;
+}
+.dashboard_chat_main_div{
+    margin-top: 20px;
+}
+.chat_container {
+    padding: 16px 20px;
+    width: 100%;
+    background: #F7FCFF;
+    border-radius: 8px;
+    border: 1px solid #EBEBEB;
+    height: 460px;
+    overflow-y: auto;
+}
+.chat_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chat_title_box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.chat_icon {
+    font-size: 20px;
+}
+.chat_title {
+    font-size: 18px;
+    font-weight: 600;
+}
+.chat_header_right button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+.chat_search_box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    margin-top: 10px;
+}
+.chat_search_box i{
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+.chat_search_box input {
+    border: 0.81px solid #EBEBEB;
+    outline: none;
+    background: #FFFFFF00;
+    padding: 8px 12px 8px 30px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #5F6B7A;
+    font-weight: 400;
+    font-size: 14px;
+    width: 100%;
+}
+.chat_search_box button {
+    background: #3762E9;
+    color: #FFFFFF;
+    font-size: 22px;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 37px;
+    width: 37px;
+    min-width: 37px;
+}
+.chat_list {
+    max-height: 420px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+.chat_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.chat_item:hover {
+    background: #f9fafb;
+}
+.chat_item.active {
+    background: #EBEBEB;
+}
+.chat_avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.chat_info {
+    flex: 1;
+    margin-left: 12px;
+}
+.chat_name {
+    font-weight: 500;
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 0;
+}
+.chat_message {
+    color: #5F6B7A;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.chat_meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+.chat_time {
+    font-size: 12px;
+    color: #888;
+}
+.chat_unread {
+    background: #2563eb;
+    color: white;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.typing .chat_message {
+    color: #3762E9;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Invoices Style ============================ */
 .invoices_left_content_main{
@@ -582,8 +837,7 @@ body {
 .irc2_title4{
     border-top: 1px solid #E0E2E7;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
     flex-wrap: wrap;
     padding-top: 16px;
@@ -606,6 +860,7 @@ body {
     font-size: 14px;
     text-align: center;
     color: #232323;
+    width: 100%;
 }
 /* Invoices Table Style ============================ */
 .invoives_table_main{
@@ -1083,11 +1338,132 @@ body {
     }
 }
 
-
-
-
-
-
+.chart_container {
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+}
+.chart_labels {
+    position: absolute;
+    width: 100%;
+    max-width: 120px;
+    text-align: end;
+    top: 25px;
+    left: 15px;
+}
+.chart_labels p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #5F6B7A;
+    margin-bottom: 0;
+}
+.chart_labels p b{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 16.41px;
+    color: #232323;
+}
+.chart_circle {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chart_container svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+.chart_circle_bg {
+    fill: none;
+    stroke: transparent;
+    stroke-width: 10;
+}
+.chart_progress {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 502;
+    /* 2πr when r=80 */
+    stroke-dashoffset: 502;
+    transition: stroke-dashoffset 1.5s ease;
+}
+.chart_progress.bezahlt {
+    stroke: #aaffaa;
+}
+.chart_progress.unbezahlt {
+    stroke: #ffe9a1;
+}
+.chart_progress.uberfaellig {
+    stroke: #ff9d9d;
+}
+.chart_center {
+    position: absolute;
+    text-align: center;
+}
+.chart_center h3 {
+    font-weight: 600;
+    font-size: 16px;   
+    color: #232323;
+    margin-bottom: 0;
+}
+.chart_center p {
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #5F6B7A;
+}
+.dash1_billing_card_inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.dash1_billing_card_inner_txt{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 120px;
+    min-width: 120px;
+}
+.dash1_billing_card_inner_txt h5{
+    font-weight: 500;
+    font-size: 14px;
+    color: #232323;
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+.dash1_billing_card_inner_txt p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5F6B7A;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+.dash1_billing_card_inner_txt h4{
+    font-weight: 500;
+    font-size: 14px;
+    color: #232323;
+    margin-top: 8px;
+    margin-bottom: 0;
+    position: relative;
+    padding-left: 12px;
+}
+.dash1_billing_card_inner_txt h4::before{
+    content: "";
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background: #C0FFB8;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
 
 
 
@@ -1104,6 +1480,21 @@ body {
         max-width: 220px;
         overflow: hidden;
         padding-left: 10px;
+    }
+    .invoives_table_main .tbl_head{
+        font-size: 16px;
+    }
+    .invoives_table_main .table tbody tr td{
+        font-size: 14px;
+    }
+    .sidebar_links_main {
+        margin-top: 30px;
+    }
+    .invoices_left_card1_body{
+        padding: 15px;
+    }
+    .invoices_left_cards2_main{
+        padding: 15px;
     }
 }
 @media (max-width: 1140px){
@@ -1126,7 +1517,7 @@ body {
         display: none;
     }
     .dash_main{
-        width: calc(100% - 57px);
+        width: calc(100% - 50px);
     }
     .mail_subject {
         width: 100%;
@@ -1140,5 +1531,53 @@ body {
         border: none;
     }
 }
-@media (max-width: 768px){}
-@media (max-width: 576px){}
+@media (max-width: 768px){
+    .dash1_billing_btns{
+        flex-direction: column;
+    }
+    .dasboard_title2{
+        flex-wrap: wrap;
+    }
+    .invoices_left_cards2_inner1_main{
+        flex-wrap: wrap;
+    }
+    .dash1_billing_card_inner{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+@media (max-width: 576px){
+    .chart_labels {
+        position: absolute;
+        width: 100%;
+        max-width: 120px;
+        text-align: end;
+        top: 46px;
+        left: 15px;
+    }
+    .chat_container {
+        padding: 16px 10px;
+    }
+}
+@media (max-width: 480px){
+    .profile_title img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .dash_header_title h3 {
+        color: #232323;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0px;
+    }
+    .dasboard_title1_inner p {
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .invoices_left_card1_body{
+        margin-top: 20px;
+    }
+}
