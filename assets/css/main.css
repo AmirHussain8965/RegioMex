@@ -20,6 +20,13 @@ body{
     background: #3762E9;
     padding: 8px 0px;
 }
+h1,h2,h3,h4,h5,h6{
+    word-break: break-all;
+}
+.topbar_inner_main{
+    display: flex;
+    justify-content: space-between;
+}
 .topbar_inner_txt p{
     font-weight: 400;
     font-size: 16px;
@@ -31,6 +38,57 @@ body{
     font-weight: 700;
     color: #FFFFFF;
     margin-left: 10px;
+}
+.lang_switch_container {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 8px;
+    font-size: 16px;
+}
+.lang_switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 22px;
+}
+.lang_switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.lang_slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F7FCFF;
+    transition: 0.3s;
+    border-radius: 34px;
+}
+.lang_slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #3762E9;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+.lang_switch input:checked + .lang_slider {
+    background-color: #FFFFFF;
+}
+
+.lang_switch input:checked+.lang_slider:before {
+    transform: translateX(20px);
+}
+.lang_text {
+    font-weight: 500;
+    user-select: none;
 }
 .header_section {
     transition: all 0.2s ease;
@@ -300,4 +358,52 @@ body{
 .hero_btns_main button:first-child{
     background: #3762E9;
     color: #FEF5E7;
+}
+
+@media(max-width: 1366px){
+    .hero_btns_main button {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+}
+@media(max-width: 992px){
+    .spotless_sec_main{
+        flex-direction: column-reverse;
+    }
+    .spotless_img {
+        position: absolute;
+        top: -77px;
+        right: 20px;
+    }
+    .spotless_img img{
+        height: 270px;
+        width: 100%;
+    }
+}
+@media(max-width: 768px){
+    .spotless_img {
+        display: none;
+    }
+}
+@media(max-width: 576px){
+    .spotless_sec_main{
+        padding: 30px 20px;
+    }
+    .spotless_sec_txt h1 {
+        font-weight: 700;
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+    .hero_text_txt_main h1 {
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+        color: #000000;
+        margin-top: 20px;
+    }
+}
+@media(max-width: 480px){
+    .home_sec4_inner_card_body{
+        flex-direction: column;
+    }
 }
