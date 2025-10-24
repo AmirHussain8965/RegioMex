@@ -21,13 +21,20 @@
                     <p>Rufen Sie uns an für einen kostenlosen Kostenvoranschlag! Wir sind immer erreichbar: 
                         <a href="tel: +123-456-7890">123-456-7890</a></p>
                 </div>
+                  <div class="lang_switch_container">
+                    <label class="lang_switch">
+                    <input type="checkbox" id="lang_toggle">
+                    <span class="lang_slider"></span>
+                    </label>
+                    <span class="lang_text"><span id="lang_fr">Fr</span> / <span id="lang_de">de</span></span>
+                </div>
             </div>
         </div>
     </section>
 
     <header class="header_section"> 
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,7 +91,7 @@
                 <p>Bitte Dienstleistung wählen. Inhalte werden automatisch ein-/ausgeblendet.</p>
             </div>
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="col-lg-8 col-md-12 col-sm-12">
                     <div class="home_sec1_left_card_main">
                         <button type="button" class="home_sec1_btn1">Anfrange</button>
                         <div class="home_sec1_left_card_input">
@@ -199,7 +206,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="col-lg-4 col-md-8 col-sm-12">
                     <div class="home_sec1_calender">
                         <h1>CALENDAR</h1>
                     </div>
@@ -657,17 +664,22 @@
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
             spaceBetween: 30,
+            loop: true,
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
             },
             breakpoints: {
+                200: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
                 520: {
                     slidesPerView: 1,
                     spaceBetween: 10,
                 },
                 640: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                     spaceBetween: 20,
                 },
                 992: {
@@ -684,7 +696,7 @@
 
     
     <script>
-        var swiper = new Swiper(".mySwiper_test", {
+        var mySwiper_test = new Swiper(".mySwiper_test", {
             slidesPerView: 1.8,
             spaceBetween: 30,
             // autoplay: {
@@ -705,15 +717,15 @@
                     spaceBetween: 10,
                 },
                 640: {
-                    slidesPerView: 2.8,
+                    slidesPerView: 1.8,
                     spaceBetween: 20,
                 },
                 992: {
-                    slidesPerView: 2.8,
+                    slidesPerView: 1.8,
                     spaceBetween: 30,
                 },
                 1024: {
-                    slidesPerView: 2.8,
+                    slidesPerView: 1.8,
                     spaceBetween: 30,
                 },
             },

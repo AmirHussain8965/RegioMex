@@ -480,7 +480,7 @@ body{
 /* home_section_six =================== */
 
 .home_section_six{
-    padding: 50px;
+    padding: 50px 0px;
 }
 .home_sec6_left_img{
     margin-top: 30px;
@@ -1329,7 +1329,11 @@ body{
 
 
 
-
+@media(max-width: 1366px){
+    .about_sec4_title_txt1 h1 {
+        font-size: 32px;
+    }
+}
 @media(max-width: 1150px){
     .navbar-nav{
         gap: 10px !important;
@@ -1358,7 +1362,121 @@ body{
     .header_inner_main{
         padding: 0px;
     }
+    .topbar_inner_txt p{
+        display: none;
+    }
+    .contact_card_body{
+        margin-top: 30px;
+    }
+    .about_sec1_img_div{
+        margin-top: 20px;
+    }
 }
-@media(max-width: 768px){}
-@media(max-width: 576px){}
-@media(max-width: 480px){}
+@media(max-width: 768px){
+    .contact_sect_card2_main{
+        margin-top: 40px;
+    }
+    .about_sec3_main{
+        gap: 20px;
+    }
+    .about_sec3_inner{
+        border: none;
+    }
+    .about_sec3_inner:first-child{
+        text-align: center;
+    }
+    .gallery_sec1_swiper .PD_Swiper2 {
+        height: 500px;
+        width: 100%;
+    }
+}
+@media(max-width: 576px){
+    .gallery_title h1 {
+        font-weight: 700;
+        font-size: 24px;
+        color: #232323;
+        margin-top: 20px;
+    }
+    .about_sec1_img_div p{
+        font-size: 16px;
+    }
+    .about_sec1_title_txt1 p {
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #5F6B7A;
+        margin-bottom: 0;
+        line-height: 29px;
+    }
+    .home_sec5_txt_div h1 {
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+        color: #FFFFFF;
+        line-height: 42px;
+    }
+    .home_title_txt1 h1 {
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .about_sec4_title_txt1 h1 {
+        font-size: 24px;
+    }
+    .about_swiper_arrows#about_swiper_arrows2 {
+        position: absolute;
+        right: 20px;
+        left: unset;
+        bottom: 0;
+        top: unset;
+        display: flex;
+        gap: 30px;
+    }
+    .about_sec4_swiper_inner .mySwiper_test{
+        padding-bottom: 100px;
+    }
+    .home_sec3_txt h1 {
+        font-weight: 700;
+        font-size: 22px;
+        color: #FFFFFF;
+    }
+    .gallery_sec1_swiper .PD_Swiper2 {
+        height: 380px;
+        width: 100%;
+    }
+}
+@media(max-width: 480px){
+    .about_sec2_img img {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .about_sec1_title_txt1 h1 {
+        font-weight: 700;
+        font-size: 28px;
+        color: #232323;
+        margin-top: 20px;
+    }
+    .about_swiper_arrows{
+        left: 20px;
+    }
+    .about_sec4_swiper_card p {
+        padding-top: 25px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .faqs_main_div .accordion-button {
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .home_sec5_txt_div p {
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .home_sec4_right_img img#sec4_9_img {
+        height: 350px;
+    }
+}
